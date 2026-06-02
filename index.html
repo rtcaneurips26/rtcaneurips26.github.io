@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RTCA 2026 | Real-Time Conversational Agents</title>
+    <meta
+      name="description"
+      content="RTCA 2026 is a NeurIPS workshop on real-time conversational agents for natural multimodal interaction across speech, video, and language."
+    />
+    <meta name="theme-color" content="#102326" />
+    <meta property="og:title" content="RTCA 2026 | Real-Time Conversational Agents" />
+    <meta
+      property="og:description"
+      content="A full-day NeurIPS 2026 workshop on real-time generation, interactional naturalness, and evaluation of live multimodal conversational systems."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/hero-rtca.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="RTCA 2026 home">
+        <span class="brand-mark" aria-hidden="true">RT</span>
+        <span>
+          <strong>RTCA 2026</strong>
+          <small>NeurIPS Workshop</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#submit">Submit</a>
+        <a href="#organizers">Organizers</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/hero-rtca.jpg" alt="" />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">NeurIPS 2026 Workshop</p>
+          <h1 id="hero-title">RTCA 2026</h1>
+          <p class="hero-subtitle">Real-Time Conversational Agents: Toward Natural Multimodal Interaction</p>
+          <p class="hero-copy">
+            A full-day, in-person workshop for systems that listen, see, speak, and act with the
+            naturalness of human interaction across speech, video, and language.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="#submit">Call for papers</a>
+            <a class="button secondary" href="mailto:niki@tavus.io,jack@tavus.io">Contact organizers</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-facts" aria-label="Workshop quick facts">
+        <div class="fact">
+          <span>Date</span>
+          <strong>Dec. 11 or 12, 2026</strong>
+        </div>
+        <div class="fact">
+          <span>Preferred Location</span>
+          <strong>Paris, France preferred</strong>
+        </div>
+        <div class="fact">
+          <span>Format</span>
+          <strong>Full-day, in-person</strong>
+        </div>
+        <div class="fact">
+          <span>CFP Opens</span>
+          <strong>July 11, 2026</strong>
+        </div>
+      </section>
+
+      <section id="about" class="section section-light">
+        <div class="section-grid">
+          <div class="section-kicker">Why RTCA</div>
+          <div>
+            <h2>Real-time interaction is a different research problem.</h2>
+            <p>
+              Conversational AI has moved beyond text chat into voice modes, embodied avatars, shared screens,
+              and tools. Systems that feel natural must stream speech, video, and language while listening,
+              watching, and re-planning continuously.
+            </p>
+            <p>
+              RTCA focuses on the problems that offline generation largely sidesteps: latency, partial
+              observability, turn-taking, backchannels, interruptions, cross-modal alignment, and evaluation of
+              interactional naturalness.
+            </p>
+          </div>
+        </div>
+        <div class="pillars" aria-label="Workshop pillars">
+          <article>
+            <span>01</span>
+            <h3>Real-Time Generation</h3>
+            <p>Streaming speech, video, and language under hard latency budgets.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Naturalness in Interaction</h3>
+            <p>Prosody, gaze, timing, grounding, expressivity, and turn-taking dynamics.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Evaluation of Live Systems</h3>
+            <p>Metrics and protocols for responsiveness, perceived latency, and conversational quality.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="topics" class="section section-dark">
+        <div class="section-grid">
+          <div class="section-kicker">Scope</div>
+          <div>
+            <h2>Topics of interest</h2>
+            <p>
+              We invite contributions from speech, vision, language, HCI, robotics, and systems communities
+              working on interactive multimodal agents.
+            </p>
+          </div>
+        </div>
+        <div class="topic-grid">
+          <article>Streaming and low-latency speech synthesis, ASR, and full-duplex audio language models</article>
+          <article>Real-time talking-head, avatar, and embodied video generation</article>
+          <article>Streaming language models, incremental decoding, and speculative decoding</article>
+          <article>Turn-taking, backchanneling, interruption handling, and conversational timing</article>
+          <article>Multimodal alignment under latency and partial-observation constraints</article>
+          <article>Prosody, emotion, and paralinguistic generation in live interaction</article>
+          <article>Memory, grounding, and tool use during live conversation</article>
+          <article>Naturalness metrics, perceived-latency metrics, and interactive Turing-style tests</article>
+          <article>Datasets and benchmarks for interactive, not only offline, evaluation</article>
+          <article>Safety, identity, consent, trust, deepfakes, and persuasion in real-time agents</article>
+        </div>
+      </section>
+
+      <section id="speakers" class="section section-light">
+        <div class="section-grid">
+          <div class="section-kicker">Invited Talks</div>
+          <div>
+            <h2>Invited speakers</h2>
+            <p>
+              The speaker program spans full-duplex speech models, conversational avatars, affective computing,
+              and visual modelling of behavior.
+            </p>
+          </div>
+        </div>
+        <div class="speaker-grid">
+          <article class="speaker-card person-card">
+            <a class="person-photo-link" href="https://ai.honu.io/">
+              <img class="person-photo" src="assets/people/alexandre-defossez.jpg" alt="Alexandre Defossez" />
+            </a>
+            <div class="person-body">
+              <p class="speaker-status">Confirmed if Paris</p>
+              <h3>Alexandre Defossez</h3>
+              <p>Kyutai, Paris</p>
+              <span>Full-duplex conversational speech models</span>
+              <div class="person-links">
+                <a href="https://ai.honu.io/">Profile</a>
+                <a href="mailto:alex@kyutai.org">Email</a>
+              </div>
+            </div>
+          </article>
+          <article class="speaker-card person-card">
+            <a class="person-photo-link" href="https://evonneng.github.io/">
+              <img class="person-photo" src="assets/people/evonne-ng.jpg" alt="Evonne Ng" />
+            </a>
+            <div class="person-body">
+              <p class="speaker-status">Provisionally accepted</p>
+              <h3>Evonne Ng</h3>
+              <p>Meta Reality Labs / UC Berkeley</p>
+              <span>Photoreal conversational embodiment</span>
+              <div class="person-links">
+                <a href="https://evonneng.github.io/">Profile</a>
+                <a href="mailto:evonneng.28@gmail.com">Email</a>
+              </div>
+            </div>
+          </article>
+          <article class="speaker-card person-card">
+            <a class="person-photo-link" href="https://ibug.doc.ic.ac.uk/maja/">
+              <img class="person-photo" src="assets/people/maja-pantic.jpg" alt="Maja Pantic" />
+            </a>
+            <div class="person-body">
+              <p class="speaker-status">Confirmed</p>
+              <h3>Maja Pantic</h3>
+              <p>Imperial College London</p>
+              <span>Affective and behavioral signals for naturalness</span>
+              <div class="person-links">
+                <a href="https://ibug.doc.ic.ac.uk/maja/">Profile</a>
+                <a href="mailto:m.pantic@imperial.ac.uk">Email</a>
+              </div>
+            </div>
+          </article>
+          <article class="speaker-card person-card">
+            <a class="person-photo-link" href="https://www3.cs.stonybrook.edu/~samaras/">
+              <img class="person-photo" src="assets/people/dimitris-samaras.jpg" alt="Dimitris Samaras" />
+            </a>
+            <div class="person-body">
+              <p class="speaker-status">Confirmed</p>
+              <h3>Dimitris Samaras</h3>
+              <p>Stony Brook University</p>
+              <span>Gaze, expression dynamics, and behavioral cues</span>
+              <div class="person-links">
+                <a href="https://www3.cs.stonybrook.edu/~samaras/">Profile</a>
+                <a href="mailto:dimitris.samaras@stonybrook.edu">Email</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="schedule" class="section section-accent">
+        <div class="section-grid">
+          <div class="section-kicker">Workshop Day</div>
+          <div>
+            <h2>Proposed schedule</h2>
+            <p>
+              RTCA is planned as a full-day in-person workshop with invited talks, contributed talks, posters,
+              live demos, and a closing panel.
+            </p>
+          </div>
+        </div>
+        <ol class="schedule-list">
+          <li><time>08:45</time><span>Welcome</span></li>
+          <li><time>09:00</time><span>Invited talk: real-time speech and full-duplex audio LMs</span></li>
+          <li><time>09:40</time><span>Invited talk: streaming video and avatar generation</span></li>
+          <li><time>10:20</time><span>Coffee and poster setup</span></li>
+          <li><time>10:45</time><span>Contributed talks I</span></li>
+          <li><time>11:25</time><span>Invited talk</span></li>
+          <li><time>12:05</time><span>Lunch</span></li>
+          <li><time>13:30</time><span>Poster session with concurrent live-demo booths</span></li>
+          <li><time>14:30</time><span>Invited talk</span></li>
+          <li><time>15:10</time><span>Contributed talks II</span></li>
+          <li><time>15:50</time><span>Coffee</span></li>
+          <li><time>16:15</time><span>Conversational Agents Showcase: live interactions with deployed and research systems</span></li>
+          <li><time>17:00</time><span>Panel: What does naturalness mean, and how should we measure it?</span></li>
+          <li><time>17:55</time><span>Best paper and best demo announcements; close</span></li>
+        </ol>
+      </section>
+
+      <section id="submit" class="section section-light">
+        <div class="section-grid">
+          <div class="section-kicker">Submissions</div>
+          <div>
+            <h2>Call for papers</h2>
+            <p>
+              The CFP and OpenReview site are planned to go live on July 11, 2026. Submissions will be reviewed
+              by an external program committee with three reviews per paper.
+            </p>
+          </div>
+        </div>
+        <div class="submission-layout">
+          <div class="tracks">
+            <article>
+              <h3>Full papers</h3>
+              <p>8 pages</p>
+            </article>
+            <article>
+              <h3>Short papers</h3>
+              <p>4 pages</p>
+            </article>
+            <article>
+              <h3>Demo papers</h3>
+              <p>2 pages, required for Showcase demos</p>
+            </article>
+          </div>
+          <div class="dates">
+            <h3>Important dates</h3>
+            <dl>
+              <div><dt>July 11</dt><dd>CFP and OpenReview go live</dd></div>
+              <div><dt>Aug. 29 AoE</dt><dd>Submission deadline</dd></div>
+              <div><dt>Sep. 1-21</dt><dd>Review period</dd></div>
+              <div><dt>Sep. 29 AoE</dt><dd>Author notification</dd></div>
+              <div><dt>Dec. 11 or 12</dt><dd>Workshop day, preferred location Paris</dd></div>
+            </dl>
+          </div>
+        </div>
+        <p class="ethics-note">
+          Dataset submissions should include an ethics statement covering consent for voice or likeness,
+          deepfake risk, and provenance. The workshop follows the NeurIPS Code of Ethics, Code of Conduct, and
+          Main Track LLM policy.
+        </p>
+      </section>
+
+      <section id="organizers" class="section section-dark">
+        <div class="section-grid">
+          <div class="section-kicker">Team</div>
+          <div>
+            <h2>Organizers</h2>
+            <p>
+              The organizing team spans industry and academia across real-time agents, digital humans, social
+              robotics, affective computing, computer vision, and multimodal AI.
+            </p>
+          </div>
+        </div>
+        <div class="organizer-grid">
+          <article class="person-card">
+            <a class="person-photo-link" href="https://nickyfot.github.io/">
+              <img class="person-photo" src="assets/people/niki-foteinopoulou.jpg" alt="Niki Foteinopoulou photo placeholder" />
+            </a>
+            <div class="person-body">
+              <h3>Niki Foteinopoulou</h3>
+              <p>Research Scientist, Tavus</p>
+              <div class="person-links">
+                <a href="https://nickyfot.github.io/">Profile</a>
+                <a href="mailto:niki@tavus.io">Email</a>
+              </div>
+            </div>
+          </article>
+          <article class="person-card">
+            <a class="person-photo-link" href="https://alessandroconti.me/">
+              <img class="person-photo" src="assets/people/alessandro-conti.jpg" alt="Alessandro Conti" />
+            </a>
+            <div class="person-body">
+              <h3>Alessandro Conti</h3>
+              <p>Research Scientist, Tavus</p>
+              <div class="person-links">
+                <a href="https://alessandroconti.me/">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="person-card">
+            <a class="person-photo-link" href="https://jsaunders909.github.io/">
+              <img class="person-photo" src="assets/people/jack-saunders.jpg" alt="Jack Saunders" />
+            </a>
+            <div class="person-body">
+              <h3>Jack Saunders</h3>
+              <p>Senior Research Scientist, Tavus</p>
+              <div class="person-links">
+                <a href="https://jsaunders909.github.io/">Profile</a>
+                <a href="mailto:jack@tavus.io">Email</a>
+              </div>
+            </div>
+          </article>
+          <article class="person-card">
+            <a class="person-photo-link" href="https://www.kcl.ac.uk/people/oya-celiktutan">
+              <img class="person-photo" src="assets/people/oya-celiktutan.jpg" alt="Oya Celiktutan" />
+            </a>
+            <div class="person-body">
+              <h3>Oya Celiktutan</h3>
+              <p>Reader in AI and Robotics, King's College London</p>
+              <div class="person-links">
+                <a href="https://www.kcl.ac.uk/people/oya-celiktutan">Profile</a>
+                <a href="mailto:oya.celiktutan@kcl.ac.uk">Email</a>
+              </div>
+            </div>
+          </article>
+          <article class="person-card">
+            <a class="person-photo-link" href="https://www.di.univr.it/?ent=persona&id=80405&lang=en">
+              <img class="person-photo" src="assets/people/cigdem-beyan.jpg" alt="Cigdem Beyan" />
+            </a>
+            <div class="person-body">
+              <h3>Cigdem Beyan</h3>
+              <p>Associate Professor, University of Verona</p>
+              <div class="person-links">
+                <a href="https://www.di.univr.it/?ent=persona&id=80405&lang=en">Profile</a>
+                <a href="mailto:cigdem.beyan@univr.it">Email</a>
+              </div>
+            </div>
+          </article>
+          <article class="person-card">
+            <a class="person-photo-link" href="https://www.seresearch.qmul.ac.uk/cmai/people/ipatras">
+              <img class="person-photo" src="assets/people/ioannis-patras.jpg" alt="Ioannis Patras" />
+            </a>
+            <div class="person-body">
+              <h3>Ioannis Patras</h3>
+              <p>Professor, Queen Mary University of London</p>
+              <div class="person-links">
+                <a href="https://www.seresearch.qmul.ac.uk/cmai/people/ipatras">Profile</a>
+                <a href="mailto:i.patras@qmul.ac.uk">Email</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>RTCA 2026</strong>
+        <p>Real-Time Conversational Agents: Toward Natural Multimodal Interaction</p>
+      </div>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
