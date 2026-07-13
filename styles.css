@@ -171,7 +171,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 56% center;
+  object-position: 50% 35%;
 }
 
 .hero-shade {
@@ -641,7 +641,7 @@ h1 {
   }
 
   .hero-image {
-    object-position: 65% center;
+    object-position: 38% center;
   }
 
   .quick-facts,
@@ -678,7 +678,7 @@ h1 {
   }
 
   .hero-image {
-    object-position: 70% center;
+    object-position: 32% center;
   }
 
   .hero-shade {
