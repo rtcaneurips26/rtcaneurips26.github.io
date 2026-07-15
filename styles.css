@@ -394,10 +394,6 @@ h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.topics-note {
-  margin: 24px auto 0 0;
-}
-
 .topic-grid article {
   min-height: 108px;
   padding: 22px 24px;
