@@ -36,6 +36,7 @@
       <nav id="site-nav" class="site-nav" data-nav>
         <a href="#about">About</a>
         <a href="#topics">Topics</a>
+        <a href="#speakers">Speakers</a>
         <a href="#schedule">Schedule</a>
         <a href="#submit">Submit</a>
         <a href="#organizers">Organizers</a>
@@ -121,97 +122,38 @@
           <div>
             <h2>Topics of interest</h2>
             <p>
-              We invite contributions from a wide range of topics, including but not limited to: speech, vision, language, 
-              HCI, robotics, and systems communities working on interactive multimodal agents. 
+              We invite original contributions from speech, vision, language, HCI, social-signal processing, and
+              ML systems communities working on interactive multimodal agents, including but not limited to:
             </p>
           </div>
         </div>
         <div class="topic-grid">
-          <article>Streaming and low-latency speech synthesis, ASR, and full-duplex audio language models</article>
-          <article>Real-time talking-head, avatar, and embodied video generation</article>
-          <article>Streaming language models, incremental decoding, and speculative decoding</article>
-          <article>Turn-taking, backchanneling, interruption handling, and conversational timing</article>
+          <article>Streaming/low-latency speech synthesis, ASR, and full-duplex audio&ndash;language models</article>
+          <article>Real-time talking-head, avatar, and embodied video generation; lip-sync, gaze, expressivity under streaming</article>
+          <article>Streaming language models; incremental and speculative decoding for dialogue</article>
+          <article>Turn-taking, backchanneling, interruption handling, and floor management</article>
           <article>Multimodal alignment under latency and partial-observation constraints</article>
-          <article>Prosody, emotion, and paralinguistic generation in live interaction</article>
+          <article>Prosody, emotion, and paralinguistic generation in interactive settings</article>
           <article>Memory, grounding, and tool use during live conversation</article>
-          <article>Naturalness metrics, perceived-latency metrics, and interactive Turing-style tests</article>
-          <article>Datasets and benchmarks for interactive, not only offline, evaluation</article>
-          <article>Safety, identity, consent, trust, deepfakes, and persuasion in real-time agents</article>
+          <article>Evaluation of naturalness: perceptual studies, turn-taking metrics, perceived latency, interactive Turing-style tests</article>
+          <article>Datasets and benchmarks for interactive (not offline) evaluation</article>
+          <article>Efficient inference, on-device deployment, and the systems&ndash;quality trade-off</article>
+          <article>Safety, identity, and trust in real-time agents (deepfakes, persuasion, consent)</article>
         </div>
+        <p class="topics-note">
+          Position papers, critiques of current evaluation practice, and reproducibility studies are also welcome.
+        </p>
       </section>
 
-      <!-- Speakers section temporarily hidden until speaker participation is finalized for the Sydney workshop.
       <section id="speakers" class="section section-light">
         <div class="section-grid">
           <div class="section-kicker">Invited Talks</div>
           <div>
             <h2>Invited speakers</h2>
-            <p>
-              The speaker program spans full-duplex speech models, conversational avatars, affective computing,
-              and visual modelling of behavior.
-            </p>
+            <p>To be confirmed.</p>
           </div>
         </div>
-        <div class="speaker-grid">
-          <article class="speaker-card person-card">
-            <a class="person-photo-link" href="https://ai.honu.io/">
-              <img class="person-photo" src="assets/people/alexandre-defossez.jpg" alt="Alexandre Defossez" />
-            </a>
-            <div class="person-body">
-              <h3>Alexandre Defossez</h3>
-              <p>Kyutai, Paris</p>
-              <span>Full-duplex conversational speech models</span>
-              <div class="person-links">
-                <a href="https://ai.honu.io/">Profile</a>
-                <a href="mailto:alex@kyutai.org">Email</a>
-              </div>
-            </div>
-          </article>
-          <article class="speaker-card person-card">
-            <a class="person-photo-link" href="https://evonneng.github.io/">
-              <img class="person-photo" src="assets/people/evonne-ng.jpg" alt="Evonne Ng" />
-            </a>
-            <div class="person-body">
-              <h3>Evonne Ng</h3>
-              <p>Meta Reality Labs / UC Berkeley</p>
-              <span>Photoreal conversational embodiment</span>
-              <div class="person-links">
-                <a href="https://evonneng.github.io/">Profile</a>
-                <a href="mailto:evonneng.28@gmail.com">Email</a>
-              </div>
-            </div>
-          </article>
-          <article class="speaker-card person-card">
-            <a class="person-photo-link" href="https://ibug.doc.ic.ac.uk/maja/">
-              <img class="person-photo" src="assets/people/maja-pantic.jpg" alt="Maja Pantic" />
-            </a>
-            <div class="person-body">
-              <h3>Maja Pantic</h3>
-              <p>Imperial College London</p>
-              <span>Affective and behavioral signals for naturalness</span>
-              <div class="person-links">
-                <a href="https://ibug.doc.ic.ac.uk/maja/">Profile</a>
-                <a href="mailto:m.pantic@imperial.ac.uk">Email</a>
-              </div>
-            </div>
-          </article>
-          <article class="speaker-card person-card">
-            <a class="person-photo-link" href="https://www3.cs.stonybrook.edu/~samaras/">
-              <img class="person-photo" src="assets/people/dimitris-samaras.jpg" alt="Dimitris Samaras" />
-            </a>
-            <div class="person-body">
-              <h3>Dimitris Samaras</h3>
-              <p>Stony Brook University</p>
-              <span>Gaze, expression dynamics, and behavioral cues</span>
-              <div class="person-links">
-                <a href="https://www3.cs.stonybrook.edu/~samaras/">Profile</a>
-                <a href="mailto:dimitris.samaras@stonybrook.edu">Email</a>
-              </div>
-            </div>
-          </article>
-        </div>
       </section>
-      -->
 
       <section id="schedule" class="section section-accent">
         <div class="section-grid">
@@ -248,8 +190,9 @@
           <div>
             <h2>Call for papers</h2>
             <p>
-              The CFP and OpenReview site are now live. Submissions are due August 29, 2026 AoE, and will be
-              reviewed by an external program committee with three reviews per paper.
+              The call for papers opens July 18, 2026. Submissions (papers and demos) are due August 29, 2026 AoE
+              via OpenReview (portal link to be published here), formatted for double-blind review using the
+              NeurIPS 2026 style file.
             </p>
           </div>
         </div>
@@ -257,32 +200,33 @@
           <div class="tracks">
             <article>
               <h3>Full papers</h3>
-              <p>8 pages</p>
+              <p>Up to 8 pages. Original contributions; may be presented as posters and/or contributed talks.</p>
             </article>
             <article>
               <h3>Short papers</h3>
-              <p>4 pages</p>
+              <p>Up to 4 pages. Work in progress or focused contributions.</p>
             </article>
             <article>
               <h3>Demo papers</h3>
-              <p>2 pages, required for Showcase demos</p>
+              <p>Up to 2 pages.</p>
             </article>
           </div>
           <div class="dates">
             <h3>Important dates</h3>
             <dl>
-              <div><dt>July 11</dt><dd>CFP and OpenReview go live</dd></div>
-              <div><dt>Aug. 29 AoE</dt><dd>Submission deadline</dd></div>
-              <div><dt>Sep. 1-21</dt><dd>Review period</dd></div>
+              <div><dt>July 18</dt><dd>Call for papers opens</dd></div>
+              <div><dt>Aug. 29 AoE</dt><dd>Submission deadline (papers and demos)</dd></div>
               <div><dt>Sep. 29 AoE</dt><dd>Author notification</dd></div>
-              <div><dt>Dec. 11-12</dt><dd>Workshop day, Sydney, Australia</dd></div>
+              <div><dt>Dec. 11 or 12</dt><dd>Workshop day, Sydney, Australia</dd></div>
             </dl>
           </div>
         </div>
         <p class="ethics-note">
-          Dataset submissions should include an ethics statement covering consent for voice or likeness,
-          deepfake risk, and provenance. The workshop follows the NeurIPS Code of Ethics, Code of Conduct, and
-          Main Track LLM policy.
+          Page limits exclude references and appendices. The workshop is non-archival; authors retain the right
+          to publish elsewhere. Dataset submissions should include an ethics statement covering consent for voice
+          or likeness, deepfake risk, and provenance. The workshop follows the NeurIPS Code of Ethics, Code of
+          Conduct, and Main Track LLM policy. Questions? Contact us at
+          <a href="mailto:rtca-workshop@googlegroups.com">rtca-workshop@googlegroups.com</a>.
         </p>
       </section>
 
