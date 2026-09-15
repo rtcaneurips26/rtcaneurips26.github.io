@@ -363,7 +363,8 @@ h1 {
 .speaker-grid,
 .organizer-grid,
 .topic-grid,
-.tracks {
+.tracks,
+.sponsor-tiers {
   display: grid;
   gap: 16px;
 }
@@ -376,6 +377,7 @@ h1 {
 .speaker-card,
 .organizer-grid article,
 .tracks article,
+.sponsor-tiers article,
 .dates {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -399,6 +401,8 @@ h1 {
 .speaker-card h3,
 .organizer-grid h3,
 .tracks h3,
+.sponsor-tiers h3,
+.sponsor-contact h3,
 .dates h3 {
   margin-bottom: 8px;
   font-size: 1.2rem;
@@ -580,6 +584,75 @@ h1 {
   color: var(--ink-soft);
 }
 
+.sponsor-tiers {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sponsor-tiers article {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+}
+
+.tier-rank {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.tier-inherits {
+  margin: 0 0 12px;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.sponsor-tiers ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 0.96rem;
+}
+
+.sponsor-tiers li {
+  margin-bottom: 8px;
+}
+
+.sponsor-tiers li::marker {
+  color: var(--coral);
+}
+
+.sponsor-tiers li:last-child {
+  margin-bottom: 0;
+}
+
+.sponsor-contact {
+  display: flex;
+  gap: clamp(20px, 4vw, 48px);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding: 28px clamp(24px, 3vw, 36px);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--coral);
+  border-radius: 8px;
+  background: var(--paper-strong);
+  box-shadow: 0 10px 34px rgba(13, 35, 38, 0.08);
+}
+
+.sponsor-contact p {
+  max-width: 62ch;
+  margin-bottom: 0;
+  font-size: 0.96rem;
+}
+
+.sponsor-contact .button {
+  flex-shrink: 0;
+}
+
 .ethics-note {
   margin-top: 22px;
   padding: 22px 24px;
@@ -677,6 +750,7 @@ h1 {
   .speaker-grid,
   .submission-layout,
   .tracks,
+  .sponsor-tiers,
   .organizer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -732,8 +806,17 @@ h1 {
   .speaker-grid,
   .topic-grid,
   .tracks,
+  .sponsor-tiers,
   .organizer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sponsor-contact {
+    display: block;
+  }
+
+  .sponsor-contact .button {
+    margin-top: 20px;
   }
 
   .fact {
