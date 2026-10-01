@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>RTCA 2026 | Sponsorship Prospectus</title>
+    <style>
+      :root {
+        --ink: #102326;
+        --ink-soft: #314548;
+        --paper: #f3f7f4;
+        --paper-strong: #fbfdf8;
+        --teal: #0f8f95;
+        --teal-dark: #0b5458;
+        --coral: #e66b52;
+        --line: rgba(16, 35, 38, 0.16);
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 9.6pt;
+        line-height: 1.5;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        line-height: 1.15;
+        letter-spacing: -0.015em;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .masthead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 11mm 14mm 8mm;
+        background: var(--ink);
+        color: #f8fbf8;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 40px;
+        height: 40px;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.46);
+        border-radius: 8px;
+        font-size: 13pt;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+      }
+
+      .brand h1 {
+        font-size: 21pt;
+        font-weight: 900;
+      }
+
+      .brand p {
+        color: rgba(248, 251, 248, 0.72);
+        font-size: 8.6pt;
+      }
+
+      .masthead-facts {
+        flex-shrink: 0;
+        text-align: right;
+        white-space: nowrap;
+        color: rgba(248, 251, 248, 0.82);
+        font-size: 8.4pt;
+      }
+
+      .masthead-facts strong {
+        display: block;
+        color: #fff;
+        font-size: 9.4pt;
+      }
+
+      .kicker {
+        color: var(--coral);
+        font-size: 7.6pt;
+        font-weight: 900;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      main {
+        flex: 1;
+        padding: 8mm 14mm 0;
+      }
+
+      .lede {
+        margin: 4px 0 7px;
+        font-size: 15.5pt;
+        font-weight: 900;
+      }
+
+      .intro {
+        max-width: 165mm;
+        color: var(--ink-soft);
+      }
+
+      .build-your-own {
+        margin-top: 3mm;
+      }
+
+      .build-your-own strong {
+        color: var(--ink);
+      }
+
+      section {
+        margin-top: 7mm;
+      }
+
+      section > .kicker {
+        display: block;
+        margin-bottom: 4mm;
+        padding-bottom: 2mm;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .funds {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 4mm;
+      }
+
+      .funds h3 {
+        margin-bottom: 4px;
+        color: var(--teal-dark);
+        font-size: 9.6pt;
+      }
+
+      .funds p {
+        color: var(--ink-soft);
+        font-size: 8.9pt;
+      }
+
+      .tiers {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 4mm;
+      }
+
+      .tiers article {
+        padding: 5mm;
+        border: 1px solid var(--line);
+        border-top: 3px solid var(--coral);
+        border-radius: 6px;
+        background: var(--paper-strong);
+      }
+
+      .tier-rank {
+        color: var(--teal);
+        font-size: 7.4pt;
+        font-weight: 900;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .tiers h3 {
+        margin: 3px 0 5px;
+        font-size: 13pt;
+        font-weight: 900;
+      }
+
+      .tier-inherits {
+        margin-bottom: 4px;
+        color: var(--ink-soft);
+        font-size: 8.4pt;
+        font-style: italic;
+      }
+
+      .tiers ul {
+        margin: 0;
+        padding-left: 14px;
+        font-size: 9pt;
+      }
+
+      .tiers li {
+        margin-bottom: 4px;
+      }
+
+      .tiers li::marker {
+        color: var(--coral);
+      }
+
+      .tiers li:last-child {
+        margin-bottom: 0;
+      }
+
+      .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10mm;
+        margin: 7mm 0 0;
+        padding: 5mm 6mm;
+        border: 1px solid var(--line);
+        border-left: 4px solid var(--coral);
+        border-radius: 6px;
+        background: var(--paper-strong);
+      }
+
+      .contact h3 {
+        margin-bottom: 3px;
+        font-size: 11pt;
+      }
+
+      .contact p {
+        max-width: 115mm;
+        color: var(--ink-soft);
+        font-size: 8.6pt;
+      }
+
+      .contact-cta {
+        flex-shrink: 0;
+        text-align: right;
+      }
+
+      .contact-cta span {
+        display: block;
+        color: var(--ink-soft);
+        font-size: 7.6pt;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .contact-cta a {
+        color: var(--teal-dark);
+        font-size: 10pt;
+        font-weight: 900;
+        text-decoration: none;
+      }
+
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto;
+        padding: 4mm 14mm 6mm;
+        color: var(--ink-soft);
+        font-size: 7.8pt;
+      }
+
+      footer a {
+        color: var(--teal-dark);
+        font-weight: 900;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="masthead">
+      <div class="brand">
+        <span class="brand-mark">RT</span>
+        <div>
+          <h1>RTCA 2026</h1>
+          <p>Real-Time Conversational Agents: Toward Natural Multimodal Interaction</p>
+        </div>
+      </div>
+      <div class="masthead-facts">
+        <strong>NeurIPS 2026 Workshop</strong>
+        12 December 2026 &middot; 8:00 a.m. &ndash; 5:00 p.m. AEDT<br />
+        Room MR C4.11 &middot; ICC Sydney
+      </div>
+    </div>
+
+    <main>
+      <span class="kicker">Sponsorship Prospectus</span>
+      <h2 class="lede">Sponsor RTCA 2026</h2>
+      <p class="intro">
+        RTCA brings together the speech, vision, language, HCI, and ML systems communities around agents that
+        listen, see, and respond in real time. Sponsorship keeps the workshop open and accessible, and puts your
+        organisation in front of the researchers building these systems.
+      </p>
+      <p class="intro build-your-own">
+        <strong>Know what you want?</strong> Everything below is fully customisable. Let us know what will be most
+        valuable to you and we will help build a package for you.
+      </p>
+
+      <section>
+        <span class="kicker">Where your support goes</span>
+        <div class="funds">
+          <div>
+            <h3>Speaker travel</h3>
+            <p>Travel and accommodation for invited speakers and panellists.</p>
+          </div>
+          <div>
+            <h3>Travel grants</h3>
+            <p>
+              Support for students and researchers from underrepresented groups and under-resourced institutions
+              to attend.
+            </p>
+          </div>
+          <div>
+            <h3>Catering</h3>
+            <p>Coffee breaks and lunch across the full workshop day.</p>
+          </div>
+          <div>
+            <h3>Posters &amp; demos</h3>
+            <p>Infrastructure behind the poster session and live-demo Showcase.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <span class="kicker">Pre-built tiers: cumulative, each includes the one before it</span>
+        <div class="tiers">
+          <article>
+            <span class="tier-rank">Tier 1</span>
+            <h3>Supporter</h3>
+            <ul>
+              <li>Logo on the workshop website and closing slide</li>
+              <li>Social media shoutout</li>
+              <li>Listed in the post-workshop wrap-up</li>
+            </ul>
+          </article>
+          <article>
+            <span class="tier-rank">Tier 2</span>
+            <h3>Partner</h3>
+            <p class="tier-inherits">Everything in Supporter, plus:</p>
+            <ul>
+              <li>Venue signage on the workshop day</li>
+              <li>A table at the poster and demo session</li>
+              <li>Verbal thanks in the opening and closing remarks</li>
+            </ul>
+          </article>
+          <article>
+            <span class="tier-rank">Tier 3</span>
+            <h3>Champion</h3>
+            <p class="tier-inherits">Everything in Partner, plus:</p>
+            <ul>
+              <li>Named session sponsorship (e.g. &ldquo;coffee break sponsored by&hellip;&rdquo;)</li>
+              <li>Priority demo slot in the Conversational Agents Showcase</li>
+              <li>Access to the attendee list (opt-in attendees only)</li>
+              <li>Top billing across workshop materials</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <div class="contact">
+        <div>
+          <h3>Interested in sponsoring?</h3>
+          <p>Tell us a little about your organisation and what you are interested in.</p>
+        </div>
+        <div class="contact-cta">
+          <span>Contact the organizers</span>
+          <a href="mailto:rtca-workshop@googlegroups.com">rtca-workshop@googlegroups.com</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span>RTCA 2026 &middot; Real-Time Conversational Agents &middot; NeurIPS 2026, Sydney</span>
+      <a href="https://rtcaneurips26.github.io">rtcaneurips26.github.io</a>
+    </footer>
+  </body>
+</html>
